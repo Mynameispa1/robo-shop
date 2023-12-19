@@ -10,6 +10,6 @@ do
     Instance_Type="t3.micro"
     else
     Instance_Type="t2.micro"
-    aws ec2 run-instances --image-id ami-03265a0778a880afb --instance-type $Instance_Type --security-group-ids sg-096e94616125ed979
+    aws ec2 run-instances --image-id $img_id --instance-type $Instance_Type --security-group-ids $sg_id
   fi  
 done
