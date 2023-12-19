@@ -2,7 +2,7 @@
 img_id=ami-03265a0778a880afb
 sg_id=sg-096e94616125ed979
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
-ZONE_ID=ZZ1024693OKJAW10DDB2X
+ZONE_ID=Z1024693OKJAW10DDB2X
 DOMAIN_NAME="pavankumarmuvva.online"
 
 
