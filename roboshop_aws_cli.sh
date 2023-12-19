@@ -30,12 +30,13 @@ do
             ,"Type"             : "A"
             ,"TTL"              : 1
             ,"ResourceRecords"  : [{
-                "Value"         : "'$IP_ADDRESS'"
+                "Value"         : "'$i'"
             }]
         }
         }]
     }
 done
+
 
 
 
