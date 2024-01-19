@@ -12,8 +12,9 @@ do
      else
          INSTANCE_TYPE=t2.micro
       fi    
-   aws ec2 run-instances --image-id ami-03265a0778a880afb --count 1 --instance-type $INSTANCE_TYPE
+   IP_ADRESS=$(aws ec2 run-instances --image-id ami-03265a0778a880afb --count 1 --instance-type $INSTANCE_TYPE
    --security-group-ids sg-096e94616125ed979 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" --query 'Instances[0].PrivateIpAddress' --output text)
+   echo "$i privite IP address is::$IP_ADRESS"
 done
 
 
